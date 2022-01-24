@@ -1,10 +1,12 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 import React from "react"
+import covid from "./components"
 
 const App = () => {
   return (
     <>
-      <h1>LIVE</h1>
-      <h2>COVID-19 TRACKER</h2>
+      <covid />
     </>
   )
 }
