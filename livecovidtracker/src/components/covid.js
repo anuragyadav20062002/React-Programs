@@ -2,8 +2,11 @@
 import React, { useEffect } from "react"
 
 const App = () => {
+  //getting the data
   const getCovidData = async () => {
     const res = await fetch("https://data.covid19india.org/data.json")
+    const actualData = await res.json()
+    console.log(actualData.statewise[0])
   }
   useEffect(() => {
     getCovidData()

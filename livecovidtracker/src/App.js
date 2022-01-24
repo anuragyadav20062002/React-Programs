@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 import React from "react"
-import covid from "./components"
+import Covid from "./components/Covid"
 
 const App = () => {
   return (
     <>
-      <covid />
+      <Covid />
     </>
   )
 }
