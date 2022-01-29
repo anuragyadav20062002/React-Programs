@@ -1,17 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/anchor-has-content */
+/* eslint-disable jsx-a11y/heading-has-content */
+import React from "react"
+import ReactDOM from "react-dom"
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  <>
+    <div className="cards">
+      <div className="card">
+        <img
+          src="https://wallpapercave.com/wp/wp6902930.jpg"
+          alt="myPic"
+          className="card__img"
+        />
+        <div className="card__info">
+          <span className="card_category">A Netflix Original Series</span>
+          <h3 className="card__title"> Dark</h3>
+          <a
+            href="https://www.netflix.com/in/title/80100172"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button>Watch Now</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </>,
+  document.getElementById("root")
+)
