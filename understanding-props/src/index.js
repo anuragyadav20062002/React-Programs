@@ -4,28 +4,43 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
-ReactDOM.render(
-  <>
+function Card(props) {
+  return (
     <div className="cards">
       <div className="card">
-        <img
-          src="https://wallpapercave.com/wp/wp6902930.jpg"
-          alt="myPic"
-          className="card__img"
-        />
+        <img src={props.imgsrc} alt="myPic" className="card__img" />
         <div className="card__info">
-          <span className="card_category">A Netflix Original Series</span>
-          <h3 className="card__title"> Dark</h3>
-          <a
-            href="https://www.netflix.com/in/title/80100172"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <span className="card_category">{props.title}</span>
+          <h3 className="card__title">{props.sname} </h3>
+          <a href={props.link} target="_blank" rel="noreferrer">
             <button>Watch Now</button>
           </a>
         </div>
       </div>
     </div>
+  )
+}
+
+ReactDOM.render(
+  <>
+    <Card
+      imgsrc="https://wallpapercave.com/wp/wp6902930.jpg"
+      title="A Netflix Original Series"
+      sname="Dark"
+      link="https://www.netflix.com/in/title/80100172"
+    />
+    <Card
+      imgsrc="https://wallpapercave.com/dwp1x/wp5506410.jpg"
+      title="A Netflix Original Series"
+      sname="Peaky Blinders"
+      link="https://www.netflix.com/in/title/80002479"
+    />
+    <Card
+      imgsrc="https://wallpapercave.com/wp/wp4663954.jpg"
+      title="A Netflix Original Series"
+      sname="Stranger Things"
+      link="https://www.netflix.com/in/title/80057281"
+    />
   </>,
   document.getElementById("root")
 )
