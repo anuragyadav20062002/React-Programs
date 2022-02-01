@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable no-unused-vars */
+import React, { useState } from "react"
 
-function App() {
+const App = () => {
+  const [inputList, setInputList] = useState()
+
+  const itemEvent = () => {}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <div className="main_div">
+        <div className="center_div">
+          <br />
+          <h1> ToDo List</h1>
+          <br />
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Add items
+          "
+            onChange={itemEvent}
+          />
+          <button> + </button>
+          <ol>
+            <li>{inputList}</li>
+          </ol>
+        </div>
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App
