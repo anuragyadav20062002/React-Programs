@@ -14,6 +14,7 @@ const App = () => {
     setItems((oldItems) => {
       return [...oldItems, inputList]
     })
+    setInputList("")
   }
   return (
     <>
@@ -29,6 +30,7 @@ const App = () => {
             placeholder="Add items
           "
             onChange={itemEvent}
+            value={inputList}
           />
           <button onClick={listOfItems}> + </button>
           <ol>
