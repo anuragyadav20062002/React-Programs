@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import ToDoLists from "./ToDoLists"
 
 const App = () => {
-  const [inputList, setInputList] = useState("buy apple")
+  const [inputList, setInputList] = useState("")
 
   const [items, setItems] = useState([])
 
