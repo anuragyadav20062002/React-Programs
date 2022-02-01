@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react"
+import ToDoLists from "./ToDoLists"
 
 const App = () => {
   const [inputList, setInputList] = useState("buy apple")
@@ -37,7 +38,7 @@ const App = () => {
             {/* <li>{inputList}</li> */}
 
             {items.map((itemvalue) => {
-              return <li>{itemvalue}</li>
+              return <ToDoLists text={itemvalue} />
 
               // returning the current value
             })}
